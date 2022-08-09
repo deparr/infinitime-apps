@@ -5,6 +5,7 @@ intended to be used on a [PineTime] (pine64.org/pinetime) (or with [InfiniSim](h
 InifiTime version: 0.10.0
 
 **As of 08/08/2022 these apps have not been tested on actual hardware**
+
 I haven't gotten around to doing a proper build + flash
 
 
