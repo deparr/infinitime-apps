@@ -69,7 +69,7 @@ WatchFaceArc::WatchFaceArc(DisplayApp* app,
   label_time_ampm = lv_label_create(lv_scr_act(), nullptr);
   lv_label_set_text_static(label_time_ampm, "");
   lv_obj_set_style_local_text_color(label_time_ampm, LV_LABEL_PART_MAIN, LV_STATE_DEFAULT, lv_color_hex(0xC5C8C6));
-  lv_obj_align(label_time_ampm, label_time_hour, LV_ALIGN_IN_RIGHT_MID, 50, 15);
+  lv_obj_align(label_time_ampm, label_time_hour, LV_ALIGN_IN_RIGHT_MID, 30, 15);
 
   stepValue = lv_label_create(lv_scr_act(), nullptr);
   lv_obj_set_style_local_text_color(stepValue, LV_LABEL_PART_MAIN, LV_STATE_DEFAULT, lv_color_hex(0x32344A));
@@ -144,8 +144,13 @@ void WatchFaceArc::Refresh() {
           hour = hour - 12;
           ampmChar[0] = 'P';
         }
+        int al = 50;
         lv_label_set_text(label_time_ampm, ampmChar);
-        lv_label_set_text_fmt(label_time_hour, "%2X", hour);
+        lv_label_set_text_fmt(label_time_hour, "%d", hour);
+        if (hour >= 10) al = 30;
+
+        lv_obj_align(label_time_ampm, label_time_hour, LV_ALIGN_IN_RIGHT_MID, al, 15);	
+
       } else {
         lv_label_set_text_fmt(label_time_hour, "%02d", hour);
       }
