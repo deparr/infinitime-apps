@@ -1,8 +1,9 @@
 # InfiniTime Apps
 
-A collection of applications written for [InfiniTime] (https://github.com/InfiniTimeOrg/InfiniTime),
-intended to be used on a [PineTime] (pine64.org/pinetime) (or with [InfiniSim](https://github.com/InfiniTimeOrg/InfiniSim)).
-InifiTime version: 0.10.0
+A collection of applications written for [InfiniTime](https://github.com/InfiniTimeOrg/InfiniTime),
+intended to be used on a [PineTime](https://pine64.org/pinetime) (or with [InfiniSim](https://github.com/InfiniTimeOrg/InfiniSim)).
+
+InfiniTime version: 0.10.0
 
 **As of 08/08/2022 these apps have not been tested on actual hardware**
 
